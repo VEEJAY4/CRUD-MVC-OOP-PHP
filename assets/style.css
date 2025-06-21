@@ -1,0 +1,53 @@
+body {
+    color: #fff;
+    background-color: #23395d;
+
+    /* -----------------------
+        RELOAD SHORT ANIMATION
+    -------------------------- */
+    opacity: 0;
+    animation: pageFadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.15s;
+    animation-delay: .1s;
+}
+
+@keyframes pageFadeIn {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+    
+.box {
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    width: 95vw;   
+    background: white;
+    border-radius: 5px;
+}
+/* ---------------------------
+    END RELOAD SHORT ANIMATION
+------------------------------ */
+
+.error-insert {
+    font-size: 20px;
+    font-style: italic;
+    color: #ba3939;
+    background: #ffe0e0;
+    border: 1px solid #a33a3a;
+    text-align: center;
+    padding: 15px;
+}
+
+.info-delete {
+    font-size: 20px;
+    color: #059;
+    background-color: #bef;
+    border: 1px solid #3a70a3;
+    text-align: center;
+    padding: 15px;
+}
